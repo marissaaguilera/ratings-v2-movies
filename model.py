@@ -55,7 +55,7 @@ class Rating(db.Model):
     def __repr__(self):
         return f'<Rating rating_id={self.rating_id} score={self.score}>'
 
-def connect_to_db(flask_app, db_uri='postgresql:///ratings', echo=True):
+def connect_to_db(flask_app, db_uri='postgresql:///ratings', echo =True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     flask_app.config['SQLALCHEMY_ECHO'] = echo
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -71,6 +71,6 @@ if __name__ == '__main__':
 
     # Call connect_to_db(app, echo=False) if your program output gets
     # too annoying; this will tell SQLAlchemy not to print out every
-    # query it executes.
+    # query it executes.k
 
     connect_to_db(app)
