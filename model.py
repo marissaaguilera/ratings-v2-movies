@@ -76,3 +76,8 @@ if __name__ == '__main__':
     # query it executes.k
 
     connect_to_db(app)
+
+
+# ratings = Rating.query.all()
+#print(ratings[0].movie.title)
+#print(Rating.user.email)
